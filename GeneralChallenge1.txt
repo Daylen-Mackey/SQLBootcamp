@@ -1,0 +1,25 @@
+-- General Challenge! 
+-- Q1: How many payment transactions were greater than $5.00?
+select count(*) from payment
+where amount > 5.00;
+
+-- Q2: How many actors have a first name that starts with the leter P?
+select count(*) from actor
+where first_name like 'P%';
+
+-- Q3: How many unique districts are our customers from?
+select count(distinct (district)) 
+from address;
+
+--Q4: Retrieve the list of names for those distinct districts from the previous question
+select distinct(district) from address;
+
+-- Q5: How many films have a rating of R and a replacement cost between 5 dollars and 15 dolalrs?
+select count(*) from film 
+where rating = 'R'
+and replacement_cost between 5 and 15;
+
+-- Q6: How many films have the word Truman somewhere in the title?
+select count(*) from film
+where title ilike '%truman%'
+;

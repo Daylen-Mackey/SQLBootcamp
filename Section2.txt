@@ -1,0 +1,52 @@
+-- -- Challenge: Select where: -- --
+-- Part 1:
+-- select first_name, last_name, email
+-- from customer
+-- where first_name = 'Nancy' and last_name = 'Thomas';
+
+-- -- Part 2:
+-- select title, description
+-- from film
+-- where title = 'Outlaw Hanky';
+
+-- -- Part 3:
+-- select phone, address
+-- from address
+-- where address = '259 Ipoh Drive';
+
+-- select count(distinct amount) from payment;
+-- select title, description, length from film
+-- where rental_duration > 2
+-- order by title asc
+-- limit 10
+-- ;
+
+-- select * from payment
+-- limit 5;
+
+-- -- Challenge order by
+-- select customer_id, amount
+-- from payment
+-- order by amount desc
+-- limit 10;
+
+-- We don't know if film ID = 0 exists
+-- select film_id, title
+-- from film
+-- -- where film_id > 0 and film_id <=5
+-- order by film_id asc
+-- limit 5;
+
+-- select * from actor 
+-- where actor_id not between 5 and 10;
+
+-- select * from film
+-- limit 0;
+-- select * from customer
+-- limit 1;
+
+-- select first_name, last_name 
+-- from customer
+-- where first_name  not like '%a%'
+-- order by first_name asc;
+
